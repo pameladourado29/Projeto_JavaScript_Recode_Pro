@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <script src="./JS/funcoes.js"></script>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <nav class="menu">
+        <a href="index.html"><img src="./imagens/logo.jpg" alt="nome da empresa" width="100px"></a>
+        <a class="link" href="produtos.html">Nossos Produtos</a>
+        <a class="link" href="loja.html">Nossas lojas</a>
+        <a class="link" href="contato.html">contato</a>
+    </nav>
+    <!-- Fim Menu -->
+
+    <header>
+        <h2>Produtos</h2>
+        <hr>
+    </header>
+
+    <section class="categorias">
+        <ul>
+            <li onclick="exibir_todos()">Todos(12)</li>
+            <li onclick="exibir_categoria('geladeira')">Geladeiras(3)</li>
+            <li onclick="exibir_categoria('fogao')">Fogões(2)</li>
+            <li onclick="exibir_categoria('microondas')">Microondas(3)</li>
+            <li onclick="exibir_categoria('lavadoura')">Lavadoura de roupas(2)</li>
+            <li onclick="exibir_categoria('lavalouca')">Lava louças(3)</li>
+        </ul>
+    </section>
+
+    <section class="produtos">
+
+        <div class="box_produto" id="geladeira" style="display:inline-block;">
+            <img src="./imagens/produtos/geladeira1.jpeg" alt="Geladeira" width="120px" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Geladeira Frost Free Brastemp Side Inverse 540 litros</p>
+            <hr>
+            <p class="descricao"><strike>R$ 6.839,00</strike></p>
+            <p class="preco">R$ 5.019,00</p>
+        </div>
+        <div class="box_produto" id="geladeira" style="display:inline-block;">
+            <img src="./imagens/produtos/geladeira2.jpeg" alt="Geladeira" width="120px" onclick="destaque(this)">
+
+            <p class="descricao">Geladeira Frost Free Brastemp branca 375 litros</p>
+            <hr>
+            <p class="descricao"><strike>R$ 2.068,60</strike></p>
+            <p class="preco">R$ 1.910,90</p>
+        </div>
+        <div class="box_produto" id="geladeira" style="display:inline-block;">
+            <img src="./imagens/produtos/geladeira3.jpeg" alt="Geladeira" width="120px" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Geladeira Frost Free Brastemp Consul prata 340 litros </p>
+            <hr>
+            <p class="descricao"><strike>R$ 2.169,00</strike></p>
+            <p class="preco">R$ 2.069,00</p>
+        </div>
+        <div class="box_produto" id="fogao" style="display:inline-block" onclick="destaque(this)">
+            <img src="./imagens/produtos/fogao1.jpeg" alt="Fogão" width="120px">
+            <br>
+            <p class="descricao">Fogão 4 Bocas Consul Inox com Mesa de Vidro</p>
+            <hr>
+            <p class="descricao"><strike>R$ 1.200,00</strike></p>
+            <p class="preco">R$ 1.129,00</p>
+        </div>
+
+        <div class="box_produto" id="fogao" style="display:inline-block">
+            <img src="./imagens/produtos/fogao2.jpeg" alt="Fogão" width="120px" onclick="destaque(this)">
+            <br>
+            <p class="descricao">Fogão de Piso 4 Bocas Atlas Monaco com Acendimento Automático </p>
+            <hr>
+            <p class="descricao"><strike>R$ 600,00</strike></p>
+            <p class="preco">R$ 519,70</p>
+        </div>
+        <div class="box_produto" id="microondas" style="display:inline-block;">
+            <img src="./imagens/produtos/microondas1.jpg" alt="Micro-ondas" width="120px" onclick="destaque(this)">
+
+            <p class="descricao">Micro-ondas Consul 32 litros inox 220V</p>
+            <hr>
+            <p class="descricao"><strike>R$ 580,00</strike></p>
+            <p class="preco">R$ 409,88</p>
+        </div>
+        <div class="box_produto" id="microondas" style="display:inline-block;">
+            <img src="./imagens/produtos/microondas2.jpeg" alt="Micro-ondas" width="120px" onclick="destaque(this)">
+
+            <p class="descricao">Micro-ondas 25L espelhado Philco 220V</p>
+            <hr>
+            <p class="descricao"><strike>R$ 508,70</strike></p>
+            <p class="preco">R$ 464,53</p>
+        </div>
+        <div class="box_produto" id="microondas" style="display:inline-block;">
+            <img src="./imagens/produtos/microondas3.jpeg" alt="Micro-ondas" width="120px" onclick="destaque(this)">
+
+            <p class="descricao">Forno de Micro-ondas Eletrolux 20L branco</p>
+            <hr>
+            <p class="descricao"><strike>R$ 459,00</strike></p>
+            <p class="preco">R$ 436,05</p>
+        </div>
+
+        <div class="box_produto" id="lavalouca" style="display:inline-block;">
+            <img src="./imagens/produtos/lavadora1.jpeg" alt="Lava-louça" width="120px" onclick="destaque(this)">
+
+            <p class="descricao">Lava-louça Eletrolux Inox com 10 serviços,06 programas de lavagem,e painel Blue Touch
+            </p>
+            <hr>
+            <p class="descricao"><strike>R$ 3.500,00</strike></p>
+            <p class="preco">R$ 2.799,00</p>
+        </div>
+        <div class="box_produto" id="lavadoura" style="display:inline-block;">
+            <img src="./imagens/produtos/lavadora2.jpeg" alt="maquinadelavar" width="120px" onclick="destaque(this)">
+
+            <p class="descricao">Lavadoura de roupas Philco Inverter 12kg</p>
+            <hr>
+            <p class="descricao"><strike>R$ 2.399,00</strike></p>
+            <p class="preco">R$ 2.179,90</p>
+        </div>
+        <div class="box_produto" id="lavadoura" style="display:inline-block;">
+            <img src="./imagens/produtos/maquinadelavar1.jpeg" alt="maquinadelavar" width="120px"
+                onclick="destaque(this)">
+
+            <p class="descricao">Lavadoura de roupas Brastemp 11kg com turbo performance Branca</p>
+            <hr>
+            <p class="descricao"><strike>R$ 1.699,00</strike></p>
+            <p class="preco">R$ 1.214,10</p>
+        </div>
+        <div class="box_produto" id="lavadoura" style="display:inline-block;">
+            <img src="./imagens/produtos/maquinadelavar2.jpeg" alt="maquinadelavar" width="120px"
+                onclick="destaque(this)">
+
+            <p class="descricao">Lavadoura de roupas Philco Inverter 12kg</p>
+            <hr>
+            <p class="descricao"><strike>R$ 2.399,00</strike></p>
+            <p class="preco">R$ 2.179,90</p>
+        </div>
+
+        </div>
+    </section>
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+    <footer id="rodape">
+        <p id="formas_pagamento">Formas de pagamento</p>
+        <img src="./imagens/formas - pamentos.jpeg" alt="formas de pagamento" width="300px">
+        <p>&copy;Recode Pro</p>
+    </footer>
+</body>
+
+</html>
